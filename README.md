@@ -1,5 +1,13 @@
 # MyForm
 
+## How to run this project localy
+
+### 1- Download the project. Go to the directory of your choise and run the command line :
+`git clone https://github.com/leachatel/Exercice_Jrt.git`
+### 2- Go to project location and run following command line : ng serve 
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
 ## Development server
