@@ -6,8 +6,90 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
-  <app-root></app-root>
+  <header>
+
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#contact">Contact</a></li> 
+        <li><a href="#about">about</a></li> 
+        <li><a href="#form">Form</a></li>
+      </ul>  
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+
+  <section class="fixe">
+    <div class="content">
+      <h1 class="merci">Thank you !</h1>
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco. Minim veniam, quis nostrud enim ad. </p>
+          <a href="jrt" class="jrt">Automatisation JRT</a>
+      </div>
+  </section>
+  
+
+    <section class="formulaire">
+
+      <article class="bandeau">
+        
+        <div class="icones">
+          <a href="https://www.facebook.com/pages/Automatisation%20Jrt%20Inc./137054026387608/"> <img id="reseauxfacebook" src="assets/pictos/facebook_black-03.png" alt="Facebook"/> </a>
+          <a href="#tweeter"> <img id="reseaux"src="assets/pictos/facebook_black-02.png" alt="Tweeter"/> </a>
+          <a href="https://www.linkedin.com/company/automatisation-jrt-inc---elevator-division/"> <img id="reseaux"src="assets/pictos/facebook_black-01.png" alt="Linkedin"/> </a>
+        </div>
+
+      </article>
+
+      <div class="only-icone">
+        <a href="https://www.facebook.com/pages/Automatisation%20Jrt%20Inc./137054026387608/"> <img class="facebook2" src="assets/pictos/facebook_black-01.png" /> </a>
+        <a href="#tweeter"> <img class="facebook2" src="assets/pictos/facebook_black-02.png" /> </a>
+        <a href="https://www.linkedin.com/company/automatisation-jrt-inc---elevator-division/"> <img class="facebook2" id="face" src="assets/pictos/facebook_black-03.png" /> </a>
+      </div>
+
+      <fieldset>
+        <!--<legend>Page de connexion</legend>-->
+      <div class=remplir>
+        <h1>We love <br> going up</h1>
+          <form class="form" method="post">
+            <div class="champs">
+              <label for="username"> </label> <br>
+              <input type="text" id="three" name="username" placeholder="Username :" minlength="3" maxlength="25" required> <br>
+            </div>
+            <div class="champs">
+              <label for="password"> </label> <br>
+              <input type="password" id="three" name="password" placeholder="Password :" minlength="8" required> <br>
+            </div>
+            <div class="champs">
+              <label for="campany"> </label> <br>
+              <input type="campany" id="three" name="campany" placeholder="Campany :" required> <br>
+            </div>
+            <div class="champs">
+              <input type="submit" id="submit" value="Submit">
+            </div>
+          </form>
+      </div>
+      <script>
+        document.querySelector("#submit").addEventListener("click", function(event) {
+          console.log("test"); event.preventDefault();}, false);
+      </script>
+
+    </fieldset>
+
+    </section>
+    
+  </header>
+
+
+
+  <!--<app-root></app-root>-->
 </body>
 </html>
